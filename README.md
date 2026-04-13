@@ -2,6 +2,9 @@
 
 A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that turns every conversation into an English practice session.
 
+**README in other languages:**
+[中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Español](./README.es.md) | [Português](./README.pt-BR.md) | [Tiếng Việt](./README.vi.md) | [ภาษาไทย](./README.th.md) | [Русский](./README.ru.md) | [العربية](./README.ar.md)
+
 ## What it does
 
 When activated, Claude will:
@@ -10,7 +13,7 @@ When activated, Claude will:
 2. **Correct your English** — grammar, spelling, word choice, punctuation, expression
 3. **Teach something new** — a useful phrase, grammar tip, or more natural way to say things
 
-Designed for **non-native English speakers** (especially Chinese speakers) who want to improve their English through real daily use rather than textbook exercises.
+Designed for **non-native English speakers** who want to improve their English through real daily use rather than textbook exercises.
 
 ## Features
 
