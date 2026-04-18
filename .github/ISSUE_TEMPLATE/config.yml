@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: English Coach discussions
+    url: https://github.com/491034170/english-coach/discussions
+    about: Ask questions, share usage ideas, or discuss improvements with other users.
+  - name: English Coach latest release
+    url: https://github.com/491034170/english-coach/releases/latest
+    about: Download the latest packaged release and installation assets.
