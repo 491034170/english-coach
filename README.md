@@ -10,6 +10,8 @@ Quick links:
 - Latest release: <https://github.com/491034170/english-coach/releases/latest>
 - Skill source: [`english-coach/SKILL.md`](./english-coach/SKILL.md)
 - Chinese README: [`README.zh-CN.md`](./README.zh-CN.md)
+- Practical scenarios: [`examples/chat-scenarios.md`](./examples/chat-scenarios.md)
+- FAQ: [`FAQ.md`](./FAQ.md)
 
 **README in other languages:**
 [中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Español](./README.es.md) | [Português](./README.pt-BR.md) | [Tiếng Việt](./README.vi.md) | [ภาษาไทย](./README.th.md) | [Русский](./README.ru.md) | [العربية](./README.ar.md)
