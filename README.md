@@ -2,8 +2,23 @@
 
 A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that turns every conversation into an English practice session.
 
+[![Release](https://img.shields.io/github/v/release/491034170/english-coach)](https://github.com/491034170/english-coach/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Built for Claude Code](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2)](https://docs.anthropic.com/en/docs/claude-code)
+
+Quick links:
+- Latest release: <https://github.com/491034170/english-coach/releases/latest>
+- Skill source: [`english-coach/SKILL.md`](./english-coach/SKILL.md)
+- Chinese README: [`README.zh-CN.md`](./README.zh-CN.md)
+
 **README in other languages:**
 [中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Español](./README.es.md) | [Português](./README.pt-BR.md) | [Tiếng Việt](./README.vi.md) | [ภาษาไทย](./README.th.md) | [Русский](./README.ru.md) | [العربية](./README.ar.md)
+
+## Why people star this repo
+
+- It turns everyday Claude usage into English practice without changing your workflow
+- It answers first, then teaches — so it stays useful even when you are not in "study mode"
+- It works well for non-native speakers who want practical, daily improvement instead of textbook drills
 
 ## What it does
 
@@ -25,9 +40,16 @@ Designed for **non-native English speakers** who want to improve their English t
 
 ## Install
 
+Option 1 — install directly from GitHub:
+
 ```bash
 npx skills add 491034170/english-coach -a claude-code -g -y
 ```
+
+Option 2 — install from a packaged release:
+1. Open <https://github.com/491034170/english-coach/releases/latest>
+2. Download `english-coach.skill`
+3. Import it into Claude Code / Claude Desktop
 
 ## Usage
 
@@ -64,3 +86,7 @@ Then just chat normally in English. The skill will automatically correct and tea
 ## License
 
 MIT
+
+---
+
+If this skill helps you practice English more consistently, consider starring the repo so more learners can find it.
