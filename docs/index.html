@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="English Coach: a Claude Code skill that answers normally first, then corrects your English, then teaches one useful thing." />
+  <title>English Coach · Live Guide</title>
+  <style>
+    :root {
+      --bg: #07111d;
+      --panel: rgba(11, 23, 38, 0.88);
+      --line: rgba(108, 194, 255, 0.22);
+      --text: #ecf4ff;
+      --muted: #a2b8d6;
+      --accent: #67d5b5;
+      --accent-2: #59a8ff;
+      --accent-3: #b38cff;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(103, 213, 181, 0.14), transparent 30%),
+        radial-gradient(circle at top right, rgba(89, 168, 255, 0.16), transparent 26%),
+        linear-gradient(180deg, #07111d 0%, #0b1627 52%, #07111d 100%);
+      line-height: 1.65;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+    .hero { padding: 72px 0 36px; }
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    h1 {
+      margin: 18px 0 14px;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.02;
+      letter-spacing: -.03em;
+    }
+    .sub { max-width: 760px; font-size: 18px; color: var(--muted); }
+    .actions, .tags { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn, .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 12px 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: var(--shadow);
+    }
+    .btn.primary { background: linear-gradient(135deg, rgba(103,213,181,.24), rgba(89,168,255,.22)); }
+    .hero-grid, .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+    .num { font-size: 30px; font-weight: 800; }
+    .label { color: var(--muted); font-size: 14px; }
+    section { padding: 18px 0 14px; }
+    h2 { font-size: 28px; margin: 0 0 18px; letter-spacing: -.02em; }
+    ul { margin: 12px 0 0; padding-left: 20px; }
+    li + li { margin-top: 8px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    pre {
+      overflow-x: auto;
+      margin: 10px 0 0;
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(0,0,0,.28);
+      border: 1px solid rgba(255,255,255,.06);
+      color: #d7f4ff;
+    }
+    .quote {
+      border-left: 3px solid rgba(103,213,181,.5);
+      padding-left: 14px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 0 64px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      .hero { padding-top: 56px; }
+      .btn, .tag { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Claude Code skill · Learn English through real work</div>
+      <h1>English Coach</h1>
+      <p class="sub">
+        A skill that turns every Claude conversation into an English practice session.
+        It does the real job first, then improves your English without forcing you into a classroom workflow.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/491034170/english-coach/releases/latest">Download latest release</a>
+        <a class="btn" href="https://github.com/491034170/english-coach">View source repo</a>
+        <a class="btn" href="https://github.com/491034170/english-coach/blob/main/README.zh-CN.md">Read Chinese README</a>
+      </div>
+      <div class="tags">
+        <span class="tag">Answers first</span>
+        <span class="tag">Corrects your English</span>
+        <span class="tag">Teaches one useful thing</span>
+        <span class="tag">Great for non-native speakers</span>
+      </div>
+      <div class="hero-grid">
+        <div class="card"><div class="num">3-step output</div><div class="label">Answer → correct → teach</div></div>
+        <div class="card"><div class="num">10 languages</div><div class="label">README translations available in the repo</div></div>
+        <div class="card"><div class="num">0 workflow switch</div><div class="label">You keep using Claude normally; practice is layered on top</div></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Why this feels different</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="pill">Useful first</span>
+          <strong>It does the real task before teaching</strong>
+          <p>You still get the answer you needed. The learning layer comes after the job is done, so the skill stays useful during normal work.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Daily practice</span>
+          <strong>It fits real conversations, not textbook drills</strong>
+          <p>Instead of separate exercises, you improve through actual questions, requests, and work chat.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Low friction</span>
+          <strong>It works especially well for non-native speakers</strong>
+          <p>You can practice consistently even when you are not explicitly in “study mode”. That is what makes it stick.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What happens on each turn?</h2>
+      <div class="steps">
+        <div class="card"><strong>1. Claude answers normally</strong><p>No learning ritual before the answer. It handles the actual request first.</p></div>
+        <div class="card"><strong>2. It corrects your English</strong><p>Grammar, spelling, word choice, punctuation, or naturalness — whatever matters most.</p></div>
+        <div class="card"><strong>3. It teaches one useful thing</strong><p>A phrase, grammar tip, pattern, or more natural rephrasing you can reuse right away.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who is it for?</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Developers using Claude Code</strong>
+          <ul>
+            <li>You already type prompts and requests in English</li>
+            <li>You want improvement without leaving your workflow</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Professionals who need practical English</strong>
+          <ul>
+            <li>You care about emails, work chat, documentation, and meetings</li>
+            <li>You prefer natural expressions over textbook sentences</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Learners who struggle with consistency</strong>
+          <ul>
+            <li>You do not want another separate study app</li>
+            <li>You want progress to happen while doing useful work</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Install</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Option 1 · Install directly from GitHub</strong>
+          <pre><code>npx skills add 491034170/english-coach -a claude-code -g -y</code></pre>
+        </div>
+        <div class="card">
+          <strong>Option 2 · Import packaged release</strong>
+          <ul>
+            <li>Open <a href="https://github.com/491034170/english-coach/releases/latest">Latest Release</a></li>
+            <li>Download <code>english-coach.skill</code></li>
+            <li>Import it into Claude Code / Claude Desktop</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Usage</strong>
+          <pre><code>/english-coach</code></pre>
+          <p>Then just keep chatting normally in English.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mini example</h2>
+      <div class="card">
+        <div class="quote">dose this work for practice my english?</div>
+        <ul>
+          <li><strong>Answer:</strong> Claude answers the actual question first.</li>
+          <li><strong>Correction:</strong> “Does this work for practicing my English?”</li>
+          <li><strong>Teaching point:</strong> after “for”, use the -ing form in this sentence.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Explore more</h2>
+      <div class="grid">
+        <div class="card"><strong>Source repo</strong><p><a href="https://github.com/491034170/english-coach">github.com/491034170/english-coach</a></p></div>
+        <div class="card"><strong>Chinese README</strong><p><a href="https://github.com/491034170/english-coach/blob/main/README.zh-CN.md">README.zh-CN.md</a></p></div>
+        <div class="card"><strong>Practical scenarios</strong><p><a href="https://github.com/491034170/english-coach/blob/main/examples/chat-scenarios.md">examples/chat-scenarios.md</a></p></div>
+        <div class="card"><strong>FAQ</strong><p><a href="https://github.com/491034170/english-coach/blob/main/FAQ.md">FAQ.md</a></p></div>
+      </div>
+    </section>
+
+    <footer>
+      If this helps you practice English more consistently, consider starring the repo.<br />
+      Built by <a href="https://tianmind.com">Tianmind Studio</a>.
+    </footer>
+  </div>
+</body>
+</html>
