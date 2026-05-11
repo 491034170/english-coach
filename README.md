@@ -87,6 +87,33 @@ Then just chat normally in English. The skill will automatically correct and tea
 **Phrase of the day:** "get the hang of" — to become comfortable with something new.
 *Example: "I'm starting to get the hang of English prepositions."*
 
+## More learner examples
+
+### Beginner
+
+**You say:**
+> I want improve my speaking but I don't know how start.
+
+**English Coach helps with:**
+
+> ~~I want improve my speaking but I don't know how start.~~ → **I want to improve my speaking, but I don't know how to start.**
+>
+> **[Grammar]** "want improve" → "want to improve" — use `to + verb` after "want"
+> **[Grammar]** "how start" → "how to start"
+> **[Punctuation]** Add a comma before "but" when joining two complete ideas
+
+### Intermediate
+
+**You say:**
+> Could you check if this sentence sounds too direct for a work email?
+
+**English Coach helps with:**
+
+> **More natural:** "Could you check whether this sentence sounds too direct for a work email?"
+>
+> **[Word Choice]** "whether" is often smoother than "if" in careful or professional writing
+> **[Expression]** For a softer email tone, try: "Could you help me make this sound a bit more polite?"
+
 ## License
 
 MIT
