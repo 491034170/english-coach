@@ -65,7 +65,7 @@ In Claude Code, type:
 
 Then just chat normally in English. The skill will automatically correct and teach as you go.
 
-## Example
+## Example 1
 
 **You say:**
 > dose this work for practice my english?
@@ -83,6 +83,41 @@ Then just chat normally in English. The skill will automatically correct and tea
 > **[Spelling]** "dose" → "does"
 > **[Grammar]** "for practice" → "for practicing" — after "for", use the -ing form
 > **[Punctuation]** "english" → "English" — language names are always capitalized
+
+## Example 2
+
+**You say:**
+> His has a great time yesterday.
+
+**Claude responds:**
+
+*(answers your question)*
+
+---
+**English Corrections:**
+
+> ~~His has a great time yesterday.~~ → **He had a great time yesterday.**
+>
+> **[Grammar]** "His" → "He" — "His" is possessive, "He" is a subject pronoun
+> **[Grammar]** "has" → "had" — "yesterday" indicates past time, so the verb should be past tense
+
+## Example 3
+
+**You say:**
+> I look forward to meet you and making a discussion about the project.
+
+**Claude responds:**
+
+*(answers your question)*
+
+---
+**English Corrections:**
+
+> ~~I look forward to meet you and making a discussion about the project.~~ → **I look forward to meeting you and having a discussion about the project.**
+>
+> **[Grammar]** "look forward to meet you" → "look forward to meeting you" — After "look forward to," use the -ing form (gerund). The "to" here is a preposition, not part of an infinitive.
+> 
+> **[Word Choice]** "making a discussion" → "having a discussion" (or simply discussing) — In English, we "have" a discussion or "hold" a discussion — we don't "make" one.
 
 **Phrase of the day:** "get the hang of" — to become comfortable with something new.
 *Example: "I'm starting to get the hang of English prepositions."*
