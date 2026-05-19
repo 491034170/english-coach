@@ -84,7 +84,6 @@ Then just chat normally in English. The skill will automatically correct and tea
 > **[Grammar]** "for practice" → "for practicing" — after "for", use the -ing form
 > **[Punctuation]** "english" → "English" — language names are always capitalized
 
-
 ## Example 2
 
 **You say:**
