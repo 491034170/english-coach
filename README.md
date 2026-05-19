@@ -105,7 +105,7 @@ Then just chat normally in English. The skill will automatically correct and tea
 ## Example 3
 
 **You say:**
-> I wish to be at south Koreat in may.
+> I look forward to meet you and making a discussion about the project.
 
 **Claude responds:**
 
@@ -114,12 +114,11 @@ Then just chat normally in English. The skill will automatically correct and tea
 ---
 **English Corrections:**
 
-> ~~I wish to be at south Koreat in may.~~ → **I wish to be in South Korea in May.**
+> ~~I look forward to meet you and making a discussion about the project.~~ → **I look forward to meeting you and having a discussion about the project.**
 >
-> **[Grammar]** "at" → "in" — "in" is used for countries
-> **[Spelling]** "Koreat" → "Korea"
-> **[Punctuation]** "south" → "South" — names of countries are always capitalized
-> **[Punctuation]** "may" → "May" — names of months are always capitalized
+> **[Grammar]** "look forward to meet you" → "look forward to meeting you" — After "look forward to," use the -ing form (gerund). The "to" here is a preposition, not part of an infinitive.
+> 
+> **[Word Choice]** "making a discussion" → "having a discussion" (or simply discussing) — In English, we "have" a discussion or "hold" a discussion — we don't "make" one.
 
 **Phrase of the day:** "get the hang of" — to become comfortable with something new.
 *Example: "I'm starting to get the hang of English prepositions."*
